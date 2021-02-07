@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Juan Rolo" />
+		<title>NVL-JS-P13a</title>
+	</head>
+	<body>
+		<script>
+			function numeros() {
+				var c = document.getElementById("numero").value;
+				var j = 2;
+				var numerosPrimos = [];
+				function primo(numero) {
+					for (var i = 2; i < numero; i++) {
+						if (numero % i === 0) {
+							return false;
+						}
+					}
+					return numero !== 1;
+				}
+				for (; j < c; j++) {
+					if (primo(j)) {
+						numerosPrimos.push(j);
+					}
+				}
+				document.getElementById("resultado").innerHTML =
+					" \ Los numeros primos del 0 al numero elegido son: <br>" + numerosPrimos;
+			}
+		</script>
+		<h1>
+			Obtener los primos desde el 0 hasta el numero indicado.
+		</h1>
+		<form id="form1">
+			<input type="text" id="numero" placeholder="Numero" />
+		</form>
+		<input type="button" value="Enviar" onclick="numeros()" /><br /><br />
+		<div id="resultado"></div>
+	</body>
+</html>

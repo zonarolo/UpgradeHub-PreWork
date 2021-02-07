@@ -1,0 +1,18 @@
+body {
+	width: 700px;
+}
+[uno] {
+	background: green;
+	font: bold;
+}
+[dos] {
+	background: white;
+	font: bold;
+}
+[tres] {
+	background: red;
+	font: bold;
+}
+ul > li {
+	text-align: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Juan Rolo" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1 id="titulo">Titulo de nuestro sitio web</h1>
+		<div id="subtitulo"></div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum veritatis
+			reprehenderit blanditiis minima temporibus aliquam porro quaerat enim facere.
+			In omnis excepturi corrupti placeat distinctio nemo dolores suscipit ipsa
+			fugit.
+		</p>
+		<p id="segundo-parrafo">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident numquam,
+			voluptas ipsam velit ratione dolorem modi sunt illum aliquam omnis
+			reprehenderit obcaecati maxime, iure illo. Sint impedit eius assumenda
+			similique!
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa alias deleniti
+			perferendis ipsum magni veniam, delectus dolor a commodi unde tempore ratione
+			in quis dolorem? Sunt architecto cumque necessitatibus amet?
+		</p>
+		<script>
+			var elementosP = document.getElementsByTagName("p");
+			let segundoParrafo = document.getElementById("segundo-parrafo");
+			// 1 - Crear el elemento
+			var elemento = document.createElement("h2");
+			// 2 - Crear un nodo de texto
+			var contenido = document.createTextNode("Este es nuestro titular");
+			// 3 - Añadir el nodode texto al elemento
+			elemento.appendChild(contenido);
+			// 4 - Agregar atributos al elemento
+			elemento.setAttribute("align", "center");
+			// 5 - Agregar el elemento al documento
+			document.getElementById("subtitulo").appendChild(elemento);
+		</script>
+	</body>
+</html>

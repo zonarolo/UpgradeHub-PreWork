@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example 14 | Developer's Blog</title>
+    <meta charset="utf-8" />
+
+    <style>
+      .container1 {
+        width: 144px;
+        height: 152px;
+        background-color: black;
+      }
+      body {
+        padding: 10px;
+      }
+      span {
+        font-family: Arial;
+        font-size: 14pt;
+        color: green;
+      }
+
+      .container2 {
+        width: 144px;
+        height: 152px;
+        background-image: url(http://php.quicoto.com/examples/14/background.jpg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>With Background color Black</h3>
+
+    <div class="container container1">
+      <img src="//www.quicoto.com/upload/files/2008/11/6341893.jpg" alt="" />
+    </div>
+
+    <h3>With Background Image</h3>
+
+    <div class="container container2">
+      <img src="//www.quicoto.com/upload/files/2008/11/6341893.jpg" alt="" />
+    </div>
+    <span>Take mouse on the image</span>
+    <br /><br />
+    <img
+      src="http://3.bp.blogspot.com/-4p6k8mM7V7c/T6jolM6I_4I/AAAAAAAACL4/lTZyaeJyObM/s400/Change_Image_Opacity_Using_jQuery.jpg"
+      id="imgDemo"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".container img").hover(
+          function () {
+            $(this).stop().animate({ opacity: "0.2" }, "slow");
+          },
+          function () {
+            $(this).stop().animate({ opacity: "1" }, "slow");
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#imgDemo").css("opacity", 0.5);
+        $("#imgDemo").mousemove(
+          function () {
+            $(this).animate({ opacity: 1.0 }, 500);
+          },
+          function () {
+            $(this).animate({ opacity: 0.5 }, 500);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

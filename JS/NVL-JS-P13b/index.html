@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Juan Rolo" />
+		<title>Palindromo</title>
+	</head>
+	<body>
+		<h3>Verifica si el texto introducido es palindromo.</h3>
+		<form action="GET">
+			<input type="text" placeholder="Palabra" id="palabra" />
+			<input type="button" value="Enviar" onclick="texto()" />
+		</form>
+		<p id="resp"></p>
+		<script>
+			function texto() {
+				let palabra = document.getElementById("palabra").value;
+
+				palabra = palabra.replace(/ /g, "");
+				let num = palabra.length;
+
+				for (let i = 0; i < num; i++) {
+					if (palabra[i] != palabra[num - i - 1]) {
+						return (document.getElementById("resp").innerHTML =
+							"Esto no es palindromo");
+					}
+				}
+				document.getElementById("resp").innerHTML = "Esto es palindromo";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+p {
+    border: 2px solid black;
+    background-color: #080607;
+    color: #ffffff;
+    font-family: sans-serif;
+    float: left;
+    width: 50%;
+    display: inline-block;
+    margin: auto;
+    padding:1%;
+}
+
+body {
+    text-align: center;
+    background-color: grey;
+}
+
+div {
+    width: 960px;
+    margin: auto;
+}
+
+.atributo {
+    background: indigo;
+    clear: both;
+
+}
+.columna{
+    float: left;
+    width: 30%;
+    margin: 5px 20px;
+}

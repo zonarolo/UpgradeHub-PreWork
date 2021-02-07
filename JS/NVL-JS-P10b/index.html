@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Juan Rolo" />
+		<title>NVL-JS-P10b</title>
+	</head>
+	<body>
+		<script>
+			var aleatorios = [];
+			var pares = [];
+			var impares = [];
+			var x = 0;
+			while (x < 50) {
+				var num = Math.floor(Math.random() * 100 + 1);
+				aleatorios.push(num);
+				if (num % 2 == 0) {
+					pares.push(num);
+				} else {
+					impares.push(num);
+				}
+				x++;
+			}
+			console.log(
+				"Numeros aleatorios   " + aleatorios,
+				"Numeros     " + pares,
+				"Numeros impares    " + impares
+			);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/ff7fcb0371.js"></script>
+		<title>Peliculas</title>
+	</head>
+
+	<body>
+		<div id="titulo"></div>
+		<div id="contenedor"></div>
+
+		<script>
+			var pelis =
+				'[{"Nombre": "El señor de los anillos","Genero": "Accion"},{"Nombre": "Regreso al Futuro","Genero": "Accion"},{"Nombre": "Los increibles 2","Genero": "Animacion"},{"Nombre": "Acorralado","Genero": "Accion"},{"Nombre": "Akira","Genero": "Animacion"},{"Nombre": "Metropia",	"Genero": "Animacion"},{"Nombre": "La leyenda de Tarzan","Genero": "Aventuras"},{"Nombre": "12 Monos","Genero": "Ciencia ficcion"},{"Nombre": "Cube","Genero": "Ciencia ficcion"},{"Nombre": "Animales nocturnos","Genero": "Drama"},{"Nombre": "El orgullo de los yanquis","Genero": "Drama"},{"Nombre": "Harry el sucio","Genero": "Policiaco"},{"Nombre": "Batman","Genero": "Superheroe"},{"Nombre": "El caso de Lucy Harbin","Genero": "Terror"},{"Nombre": "It","Genero": "Terror"}]';
+
+			var listaPelis = JSON.parse(pelis);
+			var elemento = document.createElement("h2");
+			var contenido = document.createTextNode("Lista de peliculas");
+			elemento.appendChild(contenido);
+			elemento.setAttribute("align", "center");
+			document.getElementById("titulo").appendChild(elemento);
+			const lista = document.createElement("ul");
+
+			for (let i = 0; i < listaPelis.length; i++) {
+				const newItem = document.createElement("li");
+				const span = document.createElement("span");
+				const newContent = document.createTextNode(listaPelis[i].Nombre + " ");
+				span.appendChild(newContent);
+
+				const icon = document.createElement("i");
+
+				if (listaPelis[i].Genero === "Accion") {
+					icon.setAttribute("class", "fas fa-bomb");
+				} else if (listaPelis[i].Genero === "Animacion") {
+					icon.setAttribute("class", "fab fa-reddit-alien");
+				} else if (listaPelis[i].Genero === "Terror") {
+					icon.setAttribute("class", "fas fa-ghost");
+				} else if (listaPelis[i].Genero === "Ciencia ficcion") {
+					icon.setAttribute("class", "fas fa-user-astronaut");
+				} else if (listaPelis[i].Genero === "Comedia") {
+					icon.setAttribute("class", "fas fa-theater-masks");
+				} else if (listaPelis[i].Genero === "Fantastico") {
+					icon.setAttribute("class", "fab fa-wizards-of-the-coast");
+				} else if (listaPelis[i].Genero === "Drama") {
+					icon.setAttribute("class", "fas fa-mask");
+				} else {
+					icon.setAttribute("class", "fas fa-heart");
+				}
+
+				newItem.appendChild(span);
+				newItem.appendChild(icon);
+
+				lista.appendChild(newItem);
+			}
+
+			let contenedorLista = document.querySelector("#contenedor");
+			contenedorLista.appendChild(lista);
+		</script>
+	</body>
+</html>

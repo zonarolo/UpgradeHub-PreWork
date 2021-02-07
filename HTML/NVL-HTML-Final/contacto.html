@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Juan Rolo">
+    <title>Contactanos</title>
+</head>
+
+<body>
+    <h1 id="Encabezado">Dejanos tus datos para para poder contactarnos contigo</h1>
+    <hr>
+    <form id="formulario" name="Toma de datos" method="post" action="midata.php">
+
+
+        <input id="NA" type="text" placeholder="Nombre y Apellido">
+
+        <input id="Dir" type="text" placeholder="Direccion">
+
+        <input id="Mail usuario" type="text" placeholder="Correo electronico"><br><br>
+        <div>
+            <label for="Numero de mascotas">Numero de mascotas</label>
+            <select id="Numero de mascotas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+
+        <label for="Discapacidad">Tiene alguna discapacidad?</label>
+        <input type="radio" name="Discapacidad" value="1">Si
+        <input type="radio" name="Discapacidad" value="2">No -----
+
+
+        <textarea id="Neg" placeholder="Describenos a tu mascota"></textarea>
+
+        <textarea id="aler" placeholder="Dejanos saber si es alergica"></textarea><br><br>
+
+
+
+        <label for="Peso">Cuanto pesa tu mascota?</label>
+        <select id="Peso">
+            <option value="E">0 - 5 kg</option>
+            <option value="B">5 - 10 kg</option>
+            <option value="R">10 - 15 kg</option>
+            <option value="P">+ 15 kg </option>
+        </select>
+
+        <label for="Entrada">Entrada:</label>
+        <input id="Entrada" type="date" placeholder="Entrada">
+
+        <label for="Salida">Salida:</label>
+        <input id="Salida" type="date" placeholder="Salida"><br><br>
+
+        <label for="paquete">Indicanos que paquete vas a elegir:</label>
+        <input type="radio" name="paquete" value="1">Basico
+        <input type="radio" name="paquete" value="2">Estandar
+        <input type="radio" name="paquete" value="3">Completo
+        <input type="radio" name="paquete" value="4">Premium<br><br>
+
+        <input type="checkbox">Quiero que me llamen!
+        <hr>
+
+    </form>
+    <p>En esta seccion puedes elegir el plan mas adecuado para tu mascota o simplemente dejarnos todos tus datos para
+        poder comunicarnos contigo, solo pincha en el boton "Quiero que me llamen".</p>
+</body>
+
+</html>

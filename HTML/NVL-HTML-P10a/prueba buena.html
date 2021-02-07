@@ -1,0 +1,53 @@
+<form method="post" action="miservidor.php">
+    <div>
+        <label for=”nombre”>Nombre:</label>
+        <input id=”nombre” type=”text”>
+    </div>
+    <div>
+        <label for=”ape1”>Primer apellido:</label>
+        <input id=”ape1” type=”text”>
+    </div>
+    <div>
+        <label for=”ape2”>Segundo apellido:</label>
+        <input id=”ape2” type=”text”>
+    </div>
+    <div>
+        <label for=”edad”>Edad:</label>
+        <input id=”edad” type=”number”>
+    </div>
+    <div>
+        <label for=”lugar”>Lugar de nacimiento:</label>
+        <input id=”lugar” type=”text”>
+    </div>
+    <div>
+        <label for=”pais”>Pais de nacimiento:</label>
+        <select id=”pais”>
+            <option value=”ES”>España</option>
+            <option value=”IT”>Italia</option>
+            <option value=”FR”>Francia</option>
+        </select>
+    </div>
+    <div>
+        <label for=”sexo”>Sexo:</label>
+        <input name=”sexo” type=”radio” value=”M”>Masculino
+        <input name=”sexo” type=”radio” value=”F”>Femenino
+    </div>
+    <div>
+        <label for=”hermanos”>Número de hermanos:</label>
+        <select id=”hermanos”>
+            <option value=”1”>1</option>
+            <option value=”2”>2</option>
+            <option value=”3”>3</option>
+            <option value=”4”>4</option>
+            <option value=”5”>5</option>
+            <option value=”6”>6</option>
+            <option value=”7”>7</option>
+            <option value=”8”>8</option>
+        </select>
+    </div>
+    <div>
+        <label for=”comentario”>Comentario adicional:</label>
+        <textarea id=”comentario”></textarea>
+    </div>
+    <input type=”submit” value=”Enviar”>
+</form>

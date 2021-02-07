@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 6</title>
+	</head>
+
+	<body>
+		<p id="parrafo">
+			Estas a un click de ganar la loteria, averigualo haciendo click.
+		</p>
+		<div id="imagen"></div>
+		<button id="boton1" onclick="feliz()">Comprobar resultado A</button>
+		<button id="boton2" onclick="triste()">Comprobar resultado B</button>
+		<script>
+			var rFeliz = document.getElementById("parrafo");
+			var rTriste = document.getElementById("parrafo");
+			var boton1 = document.getElementById("boton1");
+			var boton2 = document.getElementById("boton2");
+
+			function feliz() {
+				if (boton1.innerHTML === "Comprobar resultado A") {
+					rFeliz.innerHTML = "HEMOS GANADO";
+
+					boton1.innerHTML = "Volver al sorteo";
+				} else {
+					rFeliz.innerHTML =
+						"Estas a un click de ganar la loteria, averigualo haciendo click.";
+
+					boton1.innerHTML = "Comprobar resultado A";
+					boton2.innerHTML = "Comprobar resultado B";
+				}
+			}
+
+			function triste() {
+				if (boton2.innerHTML === "Comprobar resultado B") {
+					rTriste.innerHTML = "Hemos perdido";
+					boton2.innerHTML = "Volver al sorteo";
+				} else {
+					rTriste.innerHTML =
+						"Estas a un click de ganar la loteria, averigualo haciendo click.";
+					boton1.innerHTML = "Comprobar resultado A";
+					boton2.innerHTML = "Comprobar resultado B";
+				}
+			}
+		</script>
+	</body>
+</html>

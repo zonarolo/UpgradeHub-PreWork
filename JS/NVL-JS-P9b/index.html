@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Juan Rolo" />
+		<title>NVL-JS-P9b</title>
+	</head>
+	<body>
+		<script>
+			var a = "Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo";
+			var b = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
+			var a1 = a.split(",");
+			var b1 = b.split(".");
+
+			var c = [
+				[a1[0], b1[0]],
+				[a1[1], b1[1]],
+				[a1[2], b1[2]],
+				[a1[3], b1[3]],
+				[a1[4], b1[4]],
+				[a1[5], b1[5]],
+				[a1[6], b1[6]],
+			];
+			console.log(a);
+			console.log(b);
+			console.log(c);
+		</script>
+	</body>
+</html>

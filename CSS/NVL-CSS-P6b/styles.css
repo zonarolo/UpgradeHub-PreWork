@@ -1,0 +1,26 @@
+div > p {
+  border: 2px solid black;
+  color: red;
+  font: bold;
+}
+.importante {
+  color: black;
+  background: gold;
+}
+body > h2 {
+  color: purple;
+}
+body {
+  width: 400px;
+  text-align: center;
+  block-size: auto;
+}
+h2 + p {
+  text-transform: capitalize;
+}
+h2 ~ p {
+  border: 2px dashed black;
+}
+div p {
+  background: blue;
+}

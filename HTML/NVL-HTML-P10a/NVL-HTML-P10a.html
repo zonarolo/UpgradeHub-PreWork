@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Juan Rolo">
+    <title>NVL-HTML-P10a</title>
+</head>
+
+<body>
+    <h1 id="Encabezado">Dejanos conocer tu opinion</h1>
+    <form id="formulario1" name="Encuesta" method="post" action="midata.php">
+
+        <label for="CP">Código postal</label>
+        <input id="CP" type="text">
+
+
+        <div>
+            <label for="Nivel de satisfaccion del producto">Nivel de satisfacción del producto</label>
+            <select id="Nivel de satisfaccion del producto">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+
+        <label for="Mail usuario">Correo electronico</label>
+        <input id="Mail usuario" type="text"><br>
+
+
+
+        <label for="Positivos">Puntos positivos del producto</label>
+        <textarea id="Positivos"></textarea><br>
+
+
+
+        <label for="Negativos">Puntos negativos del producto</label>
+        <textarea id="Negativos"></textarea><br>
+
+
+
+        <label for="Velocidad de entrega">Como evaluarias nuestro servicio de Delivery?</label>
+        <select id="Velocidad de entrega">
+            <option value="E">Excelente</option>
+            <option value="B">Bueno</option>
+            <option value="R">Regular</option>
+            <option value="P">Pesimo</option>
+        </select>
+
+        <h4>Evalua la calidad de nuestros operadores.</h4>
+        <input type="radio" name="Calidad" value="1">Excelente
+        <input type="radio" name="Calidad" value="2" checked="checked">Bueno
+        <input type="radio" name="Calidad" value="3">Regular
+        <input type="radio" name="Calidad" value="4">Pesimo
+
+
+    </form>
+
+</body>
+
+</html>
